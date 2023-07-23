@@ -1,0 +1,398 @@
+{% extends "siteapp/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+
+{% block body_block %}
+  <!-- Hero Section -->
+  <section class="hero-wrap" id="top-header">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="grid">
+        <div
+          class="hero-text"
+        >
+          <h4>
+            <span><img src="{% static 'siteapp/images/star.svg' %}" alt="" /></span> EXPERT
+            MEDICAL TREATMENT
+          </h4>
+          <h1>We follow a holistic approach to health care.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <div class="hero-button">
+            <a href="#contact-section">
+              <button>Book an Appointment</button>
+            </a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="{% static 'siteapp/images/banner.png' %}" alt="" />
+          <div class="up-text grid">
+            <div class="sub-img">
+              <img src="{% static 'siteapp/images/smile.svg' %}" alt="" />
+            </div>
+            <div class="sub-text">
+              <h4>872</h4>
+              <p>Happy Patients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <img src="{% static 'siteapp/images/img-right.svg' %}" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="grid">
+        <div class="choose-1">
+          <div class="grid">
+            <div class="sub-choose-img">
+              <img src="{% static 'siteapp/images/timer.svg' %}" alt="" />
+            </div>
+            <div class="sub-choose-text">
+              <h1>24 hour service</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="choose-2">
+          <div class="grid">
+            <div class="sub-choose-img">
+              <img src="{% static 'siteapp/images/timer.svg' %}" alt="" />
+            </div>
+            <div class="sub-choose-text">
+              <h1>8 years of experience</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="choose-3">
+          <div class="grid">
+            <div class="sub-choose-img">
+              <img src="{% static 'siteapp/images/timer.svg' %}" alt="" />
+            </div>
+            <div class="sub-choose-text">
+              <h1>High quality care</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <img src="{% static 'siteapp/images/bottom.svg' %}" alt="" />
+    </div>
+  </section>
+
+  <!-- services-->
+  <section class="service-section">
+    <div class="container">
+      <div class="heading">
+        <h5>Services</h5>
+        <h1>
+          Experienced in multiple <br />
+          medical practices
+        </h1>
+      </div>
+      <div class="service-container">
+        <div class="service-1">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-star.svg' %}" alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+        <div class="service-2">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-pain.svg' %}" alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+        <div class="service-3">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-hand.svg' %}" alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+        <div class="service-4">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-star.svg' %}" alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+        <div class="service-5">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-pain.svg' %}" alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+        <div class="service-6">
+          <div class="other">
+            <img src="{% static 'siteapp/images/teeth-hand.svg' %}." alt="" />
+          </div>
+          <h5>Lorem ipsum dolor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectet piscing elit, sed do
+            eiusmod.
+          </p>
+          <a href="./services.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- video -->
+  <section class="video-section">
+    <div class="container">
+      <div class="heading">
+        <h5>DR. MATTHEW ANDERSON</h5>
+        <h1>
+          Watch video to learn why he <br />
+          is the right doctor for you
+        </h1>
+      </div>
+      <div class="video-container">
+        <img src="{% static 'siteapp/images/video-img.png' %}" alt="" />
+        <a href="./video.html">
+          <img src="{% static 'siteapp/images/play-img.svg' %}" alt="" class="play-div" />
+        </a>
+      </div>
+      <div class="side">
+        <img src="{% static 'siteapp/images/img-right.svg' %}" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="grid">
+        <div class="about-img">
+          <div class="back"></div>
+          <img src="{% static 'siteapp/images/about-img.png' %}" alt="" />
+        </div>
+        <div class="about-text">
+          <h5>ABOUT ME</h5>
+          <h1>A dedicated doctor with the core mission to help</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="hero-button">
+            <a href="#contact-section">
+              <button>Book an Appointment</button>
+              <button class="button">About Me</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- schedule section -->
+  <section class="schedule">
+    <div class="container">
+      <div class="side-1">
+        <img src="{% static 'siteapp/images/large-right.svg' %}" alt="" />
+      </div>
+      <div class="side-2">
+        <img src="{% static 'siteapp/images/large-right.svg' %}" alt="" />
+      </div>
+      <div class="text-center">
+        <h1>
+          Schedule an imperson or <br />
+          virtual appointment today
+        </h1>
+        <div class="text-button">
+          <a href="#contact-section">
+            <button>Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="heading">
+        <h5>ARTICLES & NEWS</h5>
+        <h1>
+          Our articles on health and <br />
+          personal wellness
+        </h1>
+      </div>
+      <div class="grid">
+        <div class="blog-1">
+          <a href="">
+            <img src="{% static 'siteapp/images/blog-1.png' %}" alt="" />
+          </a>
+          <h5>ARTICLES</h5>
+          <a href="">
+            <h2>Should you be tested post covid</h2>
+          </a>
+          <a href="">Read more <i class="icon-arrow-right"></i></a>
+        </div>
+        <div class="blog-2">
+          <a href="">
+            <img src="{% static 'siteapp/images/blog-2.png' %}" alt="" />
+          </a>
+          <h5>ARTICLES</h5>
+          <a href="">
+            <h2>Overeating? Mindfulness excercises can support</h2>
+          </a>
+          <a href="">Read more <i class="icon-arrow-right"></i></a>
+        </div>
+        <div class="blog-3">
+          <a href="">
+            <img src="{% static 'siteapp/images/blog-3.png' %}" alt="" />
+          </a>
+          <h5>ARTICLES</h5>
+          <a href="">
+            <h2>Can vitamin D supplements prevent health issues?</h2>
+          </a>
+          <a href="">Read more <i class="icon-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonial section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="grid">
+        <div class="testimonial-img">
+          <div class="back"></div>
+          <img src="{% static 'siteapp/images/testimonials.png' %}" alt="" />
+        </div>
+        <div class="testimonial-text">
+          <img src="{% static 'siteapp/images/quotes.svg' %}" alt="" />
+          <p>
+            Amet minim mollit non deserunt est <br />
+            sit aliqua dolor do amet sint officia <br />
+            consequat duis enim mollit <br />
+            exercitation.
+          </p>
+          <img src="{% static 'siteapp/images/quotes.svg' %}" alt="" />
+          <p class="name">Lee Morgan, Slack, Inc</p>
+          <h5>New York, NY Team</h5>
+          <div class="arrows">
+            <img src="{% static 'siteapp/images/arrow-1.svg' %}" alt="" />
+            <img src="{% static 'siteapp/images/arrow-2.svg' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <div class="heading">
+        <h5>CONTACT US</h5>
+        <h1>
+          Get in touch to book your first <br />
+          appointment
+        </h1>
+      </div>
+      <div class="grid phone-container">
+        <div class="phone">
+          <div class="grid">
+            <div class="sub-phone-img">
+              <i class="icon-phone"></i>
+            </div>
+            <div class="sub-phone-text">
+              <h5>PHONE</h5>
+              <p>(123) 456 -7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="grid">
+            <div class="sub-mail-img">
+              <i class="icon-envelope"></i>
+            </div>
+            <div class="sub-mail-text">
+              <h5>MAIL</h5>
+              <p>hi@flowbase.co</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form phone-container">
+        <form method='post' enctype='multipart/form'>
+          {% csrf_token %}
+          <div class="grid">
+            <div class="input-control">
+              <input type="text" name="fname" id="fname" placeholder="First name" />
+            </div>
+            <div class="input-control">
+              <input type="text" name="lname" id="lname" placeholder="Last name" />
+            </div>
+          </div>
+          <div class="grid">
+            <div class="input-control">
+              <input type="text" name="pnumber" id="pnumber" placeholder="Phone number" />
+            </div>
+            <div class="input-control">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
+          </div>
+          <div class="input-control" id="input-control">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Type your message here"
+            />
+          </div>
+          <div class="hero-button" id="button">
+            <a href="">
+              <button>Book an Appointment</button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+  

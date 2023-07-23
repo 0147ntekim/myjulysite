@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'user/css/style.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'user/css/custom.css' %}">-->
+    <link rel="stylesheet" href="{% static 'user/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/fonts (2).css' %}">
+</head>
+
+<body>
+
+    <!-- <div class="wrapper">
+        <div class="red-div"></div>
+    </div> -->
+    <div class="container">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+            {% csrf_token %}
+            <div class="heading">
+                {% for i in messages %}
+                <p>{{i}}</p>
+                {% endfor %}
+                <h1>Sign Up</h1>
+                <p>Let's get started with your 30 days free trial</p>
+            </div>
+            <div class="input-control">
+                <input type="text" name="fname" id="fname" placeholder="Full Name">
+            </div>
+            <div class="input-control">
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-control">
+                <input type="text" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="input-control">
+                <input type="text" name="conpassword" id="conpassword" placeholder="Confirm password">
+            </div>
+            <div class="button">
+                <button>Sign Up</button>
+            </div>
+            <div class="text">
+                <p>Already have an account? <a href="{% url 'user:login' %}">Login</a></p>
+            </div>
+            <p class="border">or</p>
+            <div class="google">
+                <button><img src="{% static 'user/images__1_-removebg-preview (1).png' %}" alt=""> Sign up with Google</button>
+            </div>
+            <div class="text">
+                <p>By signing up to create an account I accept Company's <a href="">Terms of Use and Privacy Policy.</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="wrapper">
+        <div class="green-div"></div>
+    </div> -->
+
+</body>
+
+</html>

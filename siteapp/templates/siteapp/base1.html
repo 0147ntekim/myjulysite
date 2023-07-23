@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'siteapp/css/fonts.css' %}" />
+    <link rel="stylesheet" href="{% static 'siteapp/css/fonts (2).css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/674b91924c.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'siteapp/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'siteapp/css/custom.css' %}" />
+    <link rel="stylesheet" href="{% static 'siteapp/css/icomoon/style.css' %}" />
+    <!-- <link rel="stylesheet" href="./css/loader.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'siteapp/css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'siteapp/css/style.css' %}" />
+  </head>
+  <body>
+    <header class="header js-header">
+        <div class="containers">
+          <input type="checkbox" name="" id="show-burger" />
+          <div class="logo">
+            <a href="./index.html">
+              <img src="{% static 'siteapp/images/heart.svg' %}" alt="" /><span>HealthWise</span>
+            </a>
+          </div>
+          <nav>
+            <label for="show-burger">
+              <i class="icon-close closebtn"></i>
+            </label>
+            <ul>
+            </ul>
+          </nav>
+          <div class="contact">
+            <a href="tel:00000000000">
+              <p>(123) 456-7890</p>
+            </a>
+          </div>
+          {% if user.is_authenticated %}
+          <div class="contact">
+            <a href="tel:00000000000">
+              <p>welcome, {{user}}</p>
+            </a>
+          </div>
+          <div class="profile" id="profile">
+            <i class="icon-user-o">
+              <div class="menu">
+                <ul>
+                  <li><a href="{% url 'user:profile' %}">Settings</a></li>
+                  <li><a href="{% url 'user:logout' %}">Logout</a></li>
+                </ul>
+              </div>
+            </i>
+          </div>
+          {% else %}
+          <div class="button" id="clickbtn">
+            <a href={% url 'user:register' %}>
+              <button>SIGN-UP</button>
+            </a>
+          </div>
+          <div class="button" id="clickbtn">
+            <a href={% url 'user:login' %}>
+              <button>LOG-in</button>
+            </a>
+          </div>
+          {% endif %}
+          <label for="show-burger">
+            <div class="contact" id="contact">
+              <a href="tel:00000000000">
+                <p>(123) 456-7890</p> 
+              </a>
+              <i class="icon-bars" id="closebtn"></i>
+            </div>
+          </label>
+        </div>
+      </header>
+
+      {% block body %}
+      {% endblock %}
+
+      <!-- footer section -->
+      <footer>
+        <div class="container">
+          <div class="grid">
+            <div class="footer-1">
+              <div class="logo">
+                <a href="">
+                <img src="{% static 'siteapp/images/heart.svg'%}" alt="" /><span>HealthWise</span>
+                </a>
+              </div>
+              <p>
+                Build a better website for your medical and <br />
+                healthcare business today.
+              </p>
+              <div class="icons">
+                <i class="icon-facebook"></i>
+                <i class="icon-instagram insta-left"></i>
+                <i class="icon-twitter twi-left"></i>
+              </div>
+            </div>
+            <div class="footer-2">
+              <h5>Product</h5>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer-3">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./company.html">Company</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="scroll-arrow" id="movetop">
+        <a href="#top-header">
+          <i class="icon-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+    <script src="{% static 'siteapp/js/script.js' %}"></script>
+    <script src="{% static 'siteapp/js/aos.js' %}"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "slide",
+      });
+    </script>
+  </body>
+</html>

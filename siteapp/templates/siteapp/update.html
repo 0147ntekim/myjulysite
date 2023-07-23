@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'siteapp/css/style.css' %}" />
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" enctype="multi/form-data">
+        {% csrf_token %}
+        <input type="text" name="fname" value="{{updated.fname}}">
+        <input type="text" name="lname" value="{{updated.lname}}">
+        <input type="text" name="pnumber" value="{{updated.pnumber}}">
+        <input type="text" name="email" value="{{updated.email}}">
+        <input type="text" name="subject" value="{{updated.subject}}">
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

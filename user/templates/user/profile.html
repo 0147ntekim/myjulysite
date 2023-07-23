@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Profile</title>
+    <link href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' %}"
+        rel="stylesheet" />
+    <link href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'user/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'user/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/core-style.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/style (2).css' %}">
+</head>
+
+<body>
+    <div class="container rounded bg-white mt-5 mb-5" id="">
+        <div class="out-head pt-lg-5 text-center">
+            <h1>MY ACCOUNT</h1>
+        </div>
+        {% if user.is_authenticated %}
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                <img class="rounded-circle mt-5" width="150px" src="{{profiled.image.url}}" alt=''>
+                <h1></h1>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input type="file" accept="image/*" name="image" id="image">
+                    {% comment %} {% endfor %} {% endcomment %}
+
+                    <span class="font-weight-bold">{{user}}</span>
+                    <a href="">
+                        <span class="text-black-50">{{user.email}}</span>
+                    </a>
+                </div>
+            </div>
+            <div class=" col-lg-8 col-md-8 border-right mt-5">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">MY DETAILS</h4>
+                    </div>
+                    
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>FULL NAME</h4>
+                                <input type="text" class="form-control" name="fname" id="fname" value="{{edited.username}}"> <br> <br>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>EMAIL ADDRESS</h4>
+                                <input type="text" class="form-control" accept='image/*' name="email" id="email" value="{{edited.email}}">
+                            </div>
+                            <button>Save Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript"
+        src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js' %}"></script>
+    <script src="{% static 'user/js/jquery.min.js' %}"></script>
+    <script src="{% static 'user/js/popper.js' %}"></script>
+</body>
+
+</html>

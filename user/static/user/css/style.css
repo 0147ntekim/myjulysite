@@ -1,0 +1,167 @@
+.wrapper{
+    margin-top: 3%;
+}
+.red-div{
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 10px ;
+    background-color: red;
+}
+.green-div{
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 10px ;
+    background-color: green;
+}
+.container {
+    border-top: 10px solid red;
+    max-width: 320px;
+    width: 400px;
+    margin: 1rem;
+    padding: 2rem 4rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    position: relative;
+}
+#container{
+    border-top: 10px solid green;
+}
+.heading {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.heading h1 {
+    color: rgb(2, 2, 71);
+    font-size: 2.5rem;
+}
+
+.heading p {
+    font-size: 0.8875rem;
+    color: rgb(134, 130, 130);
+}
+
+.input-control input {
+    width: 92%;
+    padding: 0.7rem 0.7rem;
+    border-radius: 5px;
+    border: 1.5px solid gainsboro;
+}
+
+.input-control input:focus {
+    border: 1.5px solid cornflowerblue;
+    outline: none;
+}
+
+.input-control input::placeholder {
+    font-size: 1rem;
+}
+
+.input-control {
+    margin-bottom: 20px;
+}
+
+.button button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(2, 2, 71);
+}
+
+.button button:active {
+    transform: scale(0.98);
+}
+.google button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: black;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.google button img {
+    width: 7%;
+}
+
+.google button:active {
+    transform: scale(0.98);
+}
+
+.text {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text p a {
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.border {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 2rem;
+}
+
+.border::after {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 35%;
+    top: 66%;
+    transform: rotate(90deg);
+}
+.border::before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 65%;
+    top: 66%;
+    transform: rotate(90deg);
+}
+.borders {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 2rem;
+}
+.borders::after {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 35%;
+    top: 58%;
+    transform: rotate(90deg);
+}
+.borders::before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 65%;
+    top: 58%;
+    transform: rotate(90deg);
+}

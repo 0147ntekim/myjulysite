@@ -1,0 +1,87 @@
+{% extends 'siteapp/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+
+{% block body_block %}
+  <!-- contact section -->
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <div class="heading" id="heading">
+        <h5>CONTACT US</h5>
+        <h1>
+          Get in touch to book your first <br />
+          appointment
+        </h1>
+      </div>
+      <div class="grid phone-container">
+        <div class="phone">
+          <div class="grid">
+            <div class="sub-phone-img">
+              <i class="icon-phone"></i>
+            </div>
+            <div class="sub-phone-text">
+              <h5>PHONE</h5>
+              <p>(123) 456 -7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="grid">
+            <div class="sub-mail-img">
+              <i class="icon-envelope"></i>
+            </div>
+            <div class="sub-mail-text">
+              <h5>MAIL</h5>
+              <p>hi@flowbase.co</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form phone-container">
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="grid">
+            <div class="input-control">
+              <input type="text" name="fname" id="fname" placeholder="First name" />
+            </div>
+            <div class="input-control">
+              <input type="text" name="lname" id="lname" placeholder="Last name" />
+            </div>
+          </div>
+          <div class="grid">
+            <div class="input-control">
+              <input type="text" name="pnumber" id="pnumber" placeholder="Phone number" />
+            </div>
+            <div class="input-control">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
+          </div>
+          <div class="input-control" id="input-control">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Type your message here"
+            />
+          </div>
+          <div class="hero-button" id="button">
+            <a href="">
+              <button>Book an Appointment</button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+
+      
+
+      
